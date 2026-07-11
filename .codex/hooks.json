@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py \"scripts\\开场同步.py\"",
+            "timeout": 15,
+            "statusMessage": "检查七 Agent 状态新鲜度…"
+          }
+        ]
+      }
+    ]
+  }
+}
