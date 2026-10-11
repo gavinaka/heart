@@ -60,7 +60,7 @@ Heart 是 AkaGavin 桌面工作流生态中的一员，只负责**心态/情绪/
 | `交易机会触发（预警）` | TradingView/Taker 候选预警 | 只提供候选运行状态；候选不是交易信号 |
 | `Agent Health Monitor` | 只读治理健康监控 | 健康分只代表治理证据，不代表心理或交易质量 |
 
-> 路径前缀均为 `C:\Users\31702\Desktop\`。当前目录名以本表为准；历史归档中的过期目录描述不作为当前路径真相。
+> 路径前缀均为 `<REPO_ROOT>`。当前目录名以本表为准；历史归档中的过期目录描述不作为当前路径真相。
 
 ### 3.2 会话开场状态门禁
 - Codex 的 `.codex/hooks.json` 与 Claude 的 `.claude/settings.json` 都运行 `scripts\开场同步.py`；脚本只读检查中央注册表与 `workflow_panorama_latest.html` 的文件时间，不触发、刷新或写入任何兄弟工作流。
@@ -92,11 +92,11 @@ Heart 是 AkaGavin 桌面工作流生态中的一员，只负责**心态/情绪/
 
 | 用途 | 文件 |
 |---|---|
-| **核心画像 · 稳定身份（真相源）** | `C:\Users\31702\Desktop\Akagavin\profile\profile.json` |
-| 领域细节（资产/事业/家庭/生活，易变） | `C:\Users\31702\Desktop\Akagavin\domains\{assets,career,family,life}.md` |
-| 长期记忆 · 便携摘要 + 沟通契约 | `C:\Users\31702\Desktop\Akagavin\akagavin_profile_memory.md` |
-| 原始 Agent 宪法（沟通协议来源） | `C:\Users\31702\Desktop\Akagavin\AGENT.md` |
-| 跨会话记忆/上下文 | `C:\Users\31702\Desktop\AkaGavin_记忆档案.md`、`C:\Users\31702\Desktop\AkaGavin_Cowork上下文档案.md` |
+| **核心画像 · 稳定身份（真相源）** | `<REPO_ROOT>` |
+| 领域细节（资产/事业/家庭/生活，易变） | `<REPO_ROOT>` |
+| 长期记忆 · 便携摘要 + 沟通契约 | `<REPO_ROOT>` |
+| 原始 Agent 宪法（沟通协议来源） | `<REPO_ROOT>` |
+| 跨会话记忆/上下文 | `<REPO_ROOT>`、`<REPO_ROOT>` |
 
 > ⚠️ 旧的叙述版 `AkaGavin_画像.md` 已归档作废（被 `profile.json` + `domains/*.md` 取代）——**不要再引用**。真相源以 `profile.json` 为准，域内易变数据看 `domains/*.md`。
 
@@ -189,3 +189,5 @@ Heart 是 AkaGavin 桌面工作流生态中的一员，只负责**心态/情绪/
 ### 7.4 信心与状态标注（每个心理判断附带）
 - **高 / 中 / 低 / 未知**——心理推断尤其谨慎，信息有限就标"低"或"未知"，绝不硬给。
 - 涉及风险时附**风险等级**：无 / 关注 / 需专业评估 / 紧急（紧急见 §1 与危机协议）。
+
+> Publication note: sensitive literals and machine-specific paths were generalized for review.

@@ -31,15 +31,15 @@
 
 | 模块 | 数据库 ID | data source |
 |---|---|---|
-| 系统50笔交易（洁净进度样本） | `31efda35-a098-8007-b186-e853b120aefa` | `collection://31efda35-a098-81e9-97ff-000beda496fe` |
-| （主）交易 Check | `212fda35-a098-809f-bb92-c681fad1b12f` | `collection://212fda35-a098-8018-a01f-000b9397b164` |
-| （Maker）交易 Check | `21bfda35-a098-8062-a0a5-c7cb3f3e1f34` | `collection://21bfda35-a098-81de-aa23-000bcb8e5521` |
-| （时间）交易 Check | `225fda35-a098-80a8-982a-e194ff7bff0e` | `collection://225fda35-a098-81e1-b974-000b9bd3d1a1` |
-| 开仓前状态门禁 | `2eefda35-a098-80d5-ae55-c245da7225e6` | `collection://2eefda35-a098-80e3-90ad-000b4e6729e6` |
-| 惩罚机制 | `224fda35-a098-8099-a333-f2450f1ce1e7` | `collection://224fda35-a098-810b-9736-000b2875f6e9` |
-| 心力监控模块 | `25ffda35-a098-80d3-8f65-f45fc8346a7a` | `collection://25ffda35-a098-816e-a19e-000b98a3a076` |
-| 心智自控日记表 | `226fda35-a098-8091-8d7f-cf98604948ef` | `collection://226fda35-a098-806a-9b05-000b7793c493` |
-| A 股国家资产组合 | `2e9fda35-a098-80f5-bd68-dd4e7ef48455` | `collection://2e9fda35-a098-80d0-8da6-000bc8478f97` |
+| 系统50笔交易（洁净进度样本） | `<NOTION_RESOURCE_ID_REDACTED>` | `collection://<NOTION_RESOURCE_ID_REDACTED>` |
+| （主）交易 Check | `<NOTION_RESOURCE_ID_REDACTED>` | `collection://<NOTION_RESOURCE_ID_REDACTED>` |
+| （Maker）交易 Check | `<NOTION_RESOURCE_ID_REDACTED>` | `collection://<NOTION_RESOURCE_ID_REDACTED>` |
+| （时间）交易 Check | `<NOTION_RESOURCE_ID_REDACTED>` | `collection://<NOTION_RESOURCE_ID_REDACTED>` |
+| 开仓前状态门禁 | `<NOTION_RESOURCE_ID_REDACTED>` | `collection://<NOTION_RESOURCE_ID_REDACTED>` |
+| 惩罚机制 | `<NOTION_RESOURCE_ID_REDACTED>` | `collection://<NOTION_RESOURCE_ID_REDACTED>` |
+| 心力监控模块 | `<NOTION_RESOURCE_ID_REDACTED>` | `collection://<NOTION_RESOURCE_ID_REDACTED>` |
+| 心智自控日记表 | `<NOTION_RESOURCE_ID_REDACTED>` | `collection://<NOTION_RESOURCE_ID_REDACTED>` |
+| A 股国家资产组合 | `<NOTION_RESOURCE_ID_REDACTED>` | `collection://<NOTION_RESOURCE_ID_REDACTED>` |
 
 ---
 
@@ -98,21 +98,9 @@
 
 ---
 
-## 5. 2026-07-04 只读快照（历史锚点，使用前必须重读）
+## 5. 历史快照
 
-> 这是 2026-07-04 从 Notion 只读取得的状态，只能用于解释当日上下文。任何后续交易相关响应都必须重新查询 Notion。
-
-- 主账户：2026-07-04 BTC 做空，Taker，左侧，500 USD，5 倍，状态 `持仓中`，按计划执行，非情绪化。
-- Maker：2026-07-02 BTC 做空，Maker，左侧，800 USD，5 倍，状态 `持仓中`，按计划执行，非情绪化，复盘写有"击中50%"。
-- 门禁：2026-07-04 为 `可交易 / 平静 / 顺 / 无结果依赖 / 连续止损 0 / 身体正常`。
-- 心力：最新为 2026-07-03，工作心力消耗 3，交易专注度 7，无异常；未读到 2026-07-04 心力记录。
-- 自控：最新为 2026-07-03，按计划交易，计划完成度 100%，内耗 0。
-- 惩罚：未读到 2026-07 新惩罚；最新返回记录为 2026-06-02。
-- 洁净样本：最新为 2026-07-02，第 40 笔，进度 56%，状态进行中。
-- 时间交易 Check：行数 0。
-- A 股：当前 `进行中` 持仓合计 23409 元；中国海油、中国移动、国投电力、工商银行、长江电力均显示未浮盈；中国海油存在旧 `未开始` 重复行。
-
----
+> 具体账户、持仓、金额、日期与表现数据不进入版本库。运行时必须重新只读查询权威来源；本文件只保留核对流程。
 
 ## 6. 输出要求
 

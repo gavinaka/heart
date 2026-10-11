@@ -5,9 +5,32 @@
         "hooks": [
           {
             "type": "command",
-            "command": "py \"scripts\\开场同步.py\"",
+            "command": "py -3 -c \"import pathlib,runpy; runpy.run_path(str(next(pathlib.Path('C:/Users/31702/Desktop/Heart/scripts').glob('*.py'))), run_name='__main__')\"",
             "timeout": 15,
-            "statusMessage": "检查七 Agent 状态新鲜度…"
+            "statusMessage": "Checking workflow status freshness"
+          }
+        ]
+      },
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py -3 \"C:\\Users\\31702\\Desktop\\Technical expert\\scripts\\ecosystem_memory.py\" hook",
+            "timeout": 20,
+            "statusMessage": "Loading cross-Agent historical memory"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py -3 \"C:\\Users\\31702\\Desktop\\Technical expert\\scripts\\ecosystem_memory.py\" hook",
+            "timeout": 15,
+            "statusMessage": "Matching cross-Agent historical context"
           }
         ]
       }
